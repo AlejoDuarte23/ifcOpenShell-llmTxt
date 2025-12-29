@@ -11,3 +11,4 @@ wheels/
 .vscode
 viktor-ifcOpenShell.txt
 .env
+.pytest_cache
