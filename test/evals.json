@@ -1,0 +1,140 @@
+{
+    "test1": {
+        "prompt": "Generate a VIKTOR app that uploads an IFC file and provides: A 3D IFC viewer with automatic material-based coloring (assign a unique color per material). A materials summary table listing each material name and the count of elements using it. (Pain point addressed: Quickly visualizing which materials are used where, and obtaining a material take-off.)",
+        "code": ""
+    },
+    "test2": {
+        "prompt": "Generate a VIKTOR app that uploads an IFC file and provides: A 3D IFC viewer with color-coding by IFC class/type (e.g. walls, beams, slabs each in distinct colors). A legend or table of object types with their respective colors and instance counts. (Pain point: Understanding the composition of a model by element type at a glance.)",
+        "code": ""
+    },
+    "test3": {
+        "prompt": "Level-Colored Floor Viewer: Generate a VIKTOR app that uploads an IFC file and provides: A 3D IFC viewer with each building storey level color-coded differently. A legend indicating floor levels and their assigned colors, to distinguish floors in the model. (Pain point: Easily differentiating floors in a multi-story model for navigation and review.)",
+        "code": ""
+    },
+    "test4": {
+        "prompt": "Interactive Element Filter Viewer: Generate a VIKTOR app that uploads an IFC file and provides: A 3D IFC viewer with a filter interface (e.g. checkboxes or dropdown) to isolate and view selected categories (structural, architectural, MEP, etc.). The ability to hide or show elements by property (for example, toggle visibility of each IFC entity type). (Pain point: Quickly focusing on relevant discipline or entity types for model review.)",
+        "code": ""
+    },
+    "test5": {
+        "prompt": "Element Count by Category: Generate a VIKTOR app that uploads an IFC file and provides: A table of IFC element types (e.g. IfcWall, IfcColumn, IfcDoor, etc.) with a count of how many instances of each exist in the model. The ability to sort or filter this table, and possibly a total element count. (Pain point: Quickly summarizing the model contents by type, for sanity checks or quantity snapshots.)",
+        "code": ""
+    },
+    "test6": {
+        "prompt": "Element Count by Floor: Generate a VIKTOR app that uploads an IFC file and provides: A table of building storeys (floor names or numbers) with the count of elements contained on each floor. Each row representing a floor and columns for counts (and possibly floor area). (Pain point: Understanding distribution of model elements across floors, useful for planning phase or phased construction analysis.)",
+        "code": ""
+    },
+    "test7": {
+        "prompt": "Room Schedule (Space Areas): Generate a VIKTOR app that uploads an IFC file and provides: A table of all IfcSpace (rooms) in the building, listing each room’s name/number, area, and volume (if available). Highlight or flag any spaces missing key data (e.g. no name or no area defined). (Pain point: Extracting a room schedule for architecture or facility management, and catching incomplete room data.)",
+        "code": ""
+    },
+    "test8": {
+        "prompt": "Door and Window Schedule: Generate a VIKTOR app that uploads an IFC file and provides: A table of all doors and windows in the model with key dimensions and info (e.g. width, height, type or family name). Include additional details such as the level each door/window is on or the room it serves, if available. (Pain point: Automating door/window schedules for design documentation or quantity take-offs.)",
+        "code": ""
+    },
+    "test9": {
+        "prompt": "Wall Quantities List: Generate a VIKTOR app that uploads an IFC file and provides: A table of all walls in the model, with each wall’s length, height, net surface area, and volume (using IFC quantity take-off properties or geometry calculations). Identify walls missing these quantity data (if any) for further attention. (Pain point: Producing wall schedules with areas and volumes for estimating finishes and materials.)",
+        "code": ""
+    },
+    "test10": {
+        "prompt": "Material Inventory Table: Generate a VIKTOR app that uploads an IFC file and provides: A materials table listing each distinct material used in the model and the count of elements made of that material. If possible, include total volume of each material in the model. (Pain point: Quickly extracting a bill of materials from the IFC model for procurement or cost estimation.)",
+        "code": ""
+    },
+    "test11": {
+        "prompt": "Structural Member Schedule: Generate a VIKTOR app that uploads an IFC file and provides: A table of structural members (e.g. IfcBeam, IfcColumn) listing each element’s cross-section size (profile) and length or height. Include material of each member and highlight any missing section property information. (Pain point: Compiling structural schedules (e.g. steel beam lists) from the model to cross-check with structural analysis or drawings.)",
+        "code": ""
+    }
+    ,
+    "test12": {
+        "prompt": "Missing Property Checker (Walls Area): Generate a VIKTOR app that uploads an IFC file and provides: A check for required properties on IFC elements – for example, verify all IfcWall or IfcWallStandardCase have an \"Area\" defined in Qto_WallBaseQuantities. A table listing any wall elements missing the Area value (with their ID or name) and marking them as non-compliant. (Pain point: Verifying that critical quantity data like wall areas for take-off is present to avoid cost errors.)",
+        "code": ""
+    },
+    "test13": {
+        "prompt": "Structural Member Properties Check: Generate a VIKTOR app that uploads an IFC file and provides: A table of all structural beams and columns with indicators for whether properties like load capacity, material grade, and fire rating are specified for each. Color-code or flag entries where any of those properties are absent (e.g. a red flag if a steel beam has no material grade noted). (Pain point: Ensuring structural elements have complete metadata for safety and compliance.)",
+        "code": ""
+    },
+    "test14": {
+        "prompt": "Window/Door Performance Check: Generate a VIKTOR app that uploads an IFC file and provides: A check of all IfcWindow and IfcDoor elements for performance data such as thermal transmittance (U-value), acoustic rating, and fire resistance class. A color-coded table (green if all required values are present, red if any are missing) for each window/door. (Pain point: Ensuring openings have necessary performance specs for energy analysis and compliance.)",
+        "code": ""
+    },
+    "test15": {
+        "prompt": "Material Assignment Audit: Generate a VIKTOR app that uploads an IFC file and provides: A routine to verify every physical element has a material assignment. List any elements (by ID and type) that have no material defined or are using a generic placeholder. Optionally highlight those elements in a 3D view for easy location. (Pain point: Catching elements that lack material information which affects quantity take-offs and analyses.)",
+        "code": ""
+    },
+    "test16": {
+        "prompt": "Classification Check (Proxy Elements): Generate a VIKTOR app that uploads an IFC file and provides: A scan for any elements classified as IfcBuildingElementProxy or other proxy/unspecified classes. A report listing such elements so they can be properly classified (e.g. a proxy that should be an IfcDoor). (Pain point: Identifying poorly classified elements that disrupt schedules and data consistency.)",
+        "code": ""
+    },
+    "test17": {
+        "prompt": "Spatial Containment Validator: Generate a VIKTOR app that uploads an IFC file and provides: A check to ensure all building elements are assigned to a spatial container (like an IfcBuildingStorey or IfcSpatialStructure element). List any elements that are not part of any storey or spatial hierarchy. (Pain point: Finding components that are 'orphaned' in the model hierarchy.)",
+        "code": ""
+    },
+    "test18": {
+        "prompt": "Duplicate Element Detector: Generate a VIKTOR app that uploads an IFC file and provides: An analysis to detect duplicate elements in the model (elements with identical location and geometry). A list of potential duplicates (by comparing GUIDs, geometry, or spatial overlaps) for review. (Pain point: Removing accidental duplicates that skew quantities and coordination.)",
+        "code": ""
+    },
+    "test19": {
+        "prompt": "Coordinate Extremes Check: Generate a VIKTOR app that uploads an IFC file and provides: A check for elements placed at extreme coordinates or far from the project origin (e.g. >1km from origin). Warnings for any elements with unusually large coordinate values which might indicate geolocation or origin placement issues. (Pain point: Identifying geo-referencing or stray object issues.)",
+        "code": ""
+    },
+    "test20": {
+        "prompt": "Naming Convention Check: Generate a VIKTOR app that uploads an IFC file and provides: A scan of element names and types to flag any that are empty or use default values (e.g. 'Wall#1', 'Unnamed'). A report listing elements without proper names or numbering to help enforce naming standards. (Pain point: Enforcing consistent naming/numbering for clarity.)",
+        "code": ""
+    },
+    "test21": {
+        "prompt": "Empty Geometry Finder: Generate a VIKTOR app that uploads an IFC file and provides: A check for any product elements that lack geometric representation (no shape or geometry data in the IFC). A list of elements with missing geometry or failing geometry to be fixed by modelers. (Pain point: Catching elements that do not appear in 3D due to missing geometry.)",
+        "code": ""
+    },
+    "test22": {
+        "prompt": "Door & Opening Consistency Check: Generate a VIKTOR app that uploads an IFC file and provides: A validation that each IfcDoor or IfcWindow is properly associated with an IfcOpeningElement in a wall (and vice versa). A report of any doors/windows not inserted into a wall opening or any wall openings with no corresponding door/window. (Pain point: Ensuring architectural consistency for openings and fixtures.)",
+        "code": ""
+    },
+    "test23": {
+        "prompt": "MEP Penetration Clash Check: Generate a VIKTOR app that uploads an IFC file and provides: An automated clash check focusing on pipes or ducts intersecting structural elements without an opening (e.g. IfcPipeSegment running through an IfcWall or IfcSlab where no IfcOpening is present). Highlight conflict points in a report and optionally in the 3D view. (Pain point: Identifying uncoordinated system clashes.)",
+        "code": ""
+    },
+    "test24": {
+        "prompt": "Overlapping Geometry Check: Generate a VIKTOR app that uploads an IFC file and provides: A detection of overlapping elements (not exact duplicates, but significantly intersecting volumes that shouldn't overlap). A list of element pairs or zones where overlaps occur for investigation. (Pain point: Uncovering modeling errors where elements improperly overlap.)",
+        "code": ""
+    }
+    ,
+    "test25": {
+        "prompt": "Batch Property Adder: Generate a VIKTOR app that uploads an IFC file and provides: An interface (e.g. an input table) to specify a new custom property and value for certain IFC classes (e.g. add a property \"EmissionFactor\" to all IfcWall, IfcSlab, etc.). A function to add that property to every element of the chosen classes in the IFC, and allow downloading the updated IFC model with the new properties. (Pain point: Quickly applying consistent custom properties across a model for analysis or reporting.)",
+        "code": ""
+    },
+    "test26": {
+        "prompt": "Global Property Editor: Generate a VIKTOR app that uploads an IFC file and provides: A UI to select an existing property (e.g. \"Phase\" or \"Status\") and input a new value. A function to batch update that property for all elements (or all of a certain type) in the model, then output the modified IFC (e.g. set \"Phase\" of all elements to \"Construction\"). (Pain point: Rapidly updating global metadata across a model without manual edits.)",
+        "code": ""
+    },
+    "test27": {
+        "prompt": "Room Renumbering Tool: Generate a VIKTOR app that uploads an IFC file and provides: A feature to automatically rename or renumber all IfcSpace (rooms) according to a rule (for example, prefix based on floor number, then a sequence). The updated room names/numbers are written back into the IFC and a report is provided listing old vs new names. (Pain point: Enforcing consistent room numbering across large projects.)",
+        "code": ""
+    },
+    "test28": {
+        "prompt": "Model Pruner (Category Filter): Generate a VIKTOR app that uploads an IFC file and provides: Options to select certain categories of elements to remove (e.g. furniture, MEP elements, or any IFC class) from the model. A resulting filtered IFC file for download that contains only the desired elements (for instance, architectural model stripped of furniture and MEP). (Pain point: Simplifying models for performance or focused analysis.)",
+        "code": ""
+    },
+    "test29": {
+        "prompt": "IFC Merger (Federated Model): Generate a VIKTOR app that uploads multiple IFC files (e.g. architectural, structural, MEP) and provides: A function to merge them into a single IFC model (combining geometry and data). A 3D viewer to verify the merged model, and an option to download the combined IFC. (Pain point: Automating iterative model federation for coordination.)",
+        "code": ""
+    },
+    "test30": {
+        "prompt": "IFC Split by Level: Generate a VIKTOR app that uploads an IFC file and provides: A UI to select a specific building storey (or iterate each storey) and extract that level's elements into a separate IFC file. Download links for the IFC files corresponding to each selected level (one IFC per floor). (Pain point: Splitting large buildings into floor-specific models for contractors or performance.)",
+        "code": ""
+    },
+    "test31": {
+        "prompt": "IFC Split by Discipline: Generate a VIKTOR app that uploads an IFC file and provides: Options to filter elements by high-level category or discipline (e.g. structural vs architectural vs MEP) and export separate IFC files for each chosen category. (Pain point: Producing discipline-specific model exports for consultants or focused workflows.)",
+        "code": ""
+    },
+    "test32": {
+        "prompt": "Model Geolocation Adjuster: Generate a VIKTOR app that uploads an IFC file and provides: Inputs for a translation vector and rotation (or new survey coordinates), and a function to relocate all model elements accordingly (e.g. move model to (0,0,0) or apply an offset/rotation). Output an IFC with adjusted coordinates and updated IfcSite location if applicable. (Pain point: Correcting model coordinate systems or georeferencing without manual rework.)",
+        "code": ""
+    },
+    "test33": {
+        "prompt": "New Element Inserter: Generate a VIKTOR app that uploads an IFC file and provides: A form to input parameters for a new element (e.g. rectangular column or cube with dimensions and location). A function to create and insert a new IfcElement (such as IfcColumn or IfcFurniture placeholder) into the model at the specified location and allow downloading the updated IFC. (Pain point: Quickly adding missing elements or placeholders without opening a BIM authoring tool.)",
+        "code": ""
+    },
+    "test34": {
+        "prompt": "Parametric Grid Generator: Generate a VIKTOR app that uploads an IFC file (or starts a new model) and provides: Inputs for grid parameters (number of bays, spacing, floors, story height). A function to automatically generate a grid of structural elements (columns/beams) as a new IFC model or merged into the uploaded model. (Pain point: Rapidly producing a structural grid for planning or early-stage design.)",
+        "code": ""
+    }
+}
